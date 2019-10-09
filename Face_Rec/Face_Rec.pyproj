@@ -21,7 +21,55 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="cascades\data\__init__.py" />
     <Compile Include="Face_Rec.py" />
+    <Compile Include="Face_reg.py" />
+    <Compile Include="module1.py" />
+    <Compile Include="module2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cascades\data\haarcascade_eye.xml" />
+    <Content Include="cascades\data\haarcascade_eye_tree_eyeglasses.xml" />
+    <Content Include="cascades\data\haarcascade_frontalcatface.xml" />
+    <Content Include="cascades\data\haarcascade_frontalcatface_extended.xml" />
+    <Content Include="cascades\data\haarcascade_frontalface_alt.xml" />
+    <Content Include="cascades\data\haarcascade_frontalface_alt2.xml" />
+    <Content Include="cascades\data\haarcascade_frontalface_alt_tree.xml" />
+    <Content Include="cascades\data\haarcascade_frontalface_default.xml" />
+    <Content Include="cascades\data\haarcascade_fullbody.xml" />
+    <Content Include="cascades\data\haarcascade_lefteye_2splits.xml" />
+    <Content Include="cascades\data\haarcascade_licence_plate_rus_16stages.xml" />
+    <Content Include="cascades\data\haarcascade_lowerbody.xml" />
+    <Content Include="cascades\data\haarcascade_profileface.xml" />
+    <Content Include="cascades\data\haarcascade_righteye_2splits.xml" />
+    <Content Include="cascades\data\haarcascade_russian_plate_number.xml" />
+    <Content Include="cascades\data\haarcascade_smile.xml" />
+    <Content Include="cascades\data\haarcascade_upperbody.xml" />
+    <Content Include="cascades\third-party\frontalEyes35x16.xml" />
+    <Content Include="cascades\third-party\frontalEyes35x16XML.zip" />
+    <Content Include="cascades\third-party\Nose18x15.xml" />
+    <Content Include="Images\abba.png" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_06_Pro.jpg" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_08_Pro.jpg" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_09_Pro.jpg" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_10_Pro.jpg" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_11_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_36_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_37_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_39_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_41_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_43_Pro.jpg" />
+    <Content Include="Images\test.jpg" />
+    <Content Include="NewFile1.txt" />
+    <Content Include="NewFile2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cascades\" />
+    <Folder Include="cascades\data\" />
+    <Folder Include="cascades\third-party\" />
+    <Folder Include="Images\" />
+    <Folder Include="Images\Christian\" />
+    <Folder Include="Images\Jeppe\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
