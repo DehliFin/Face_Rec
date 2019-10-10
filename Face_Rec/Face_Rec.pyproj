@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>94a200eb-7b24-43fd-980c-9327a22b09ea</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Face_Rec.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,8 +23,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="cascades\data\__init__.py" />
-    <Compile Include="Face_Rec.py" />
     <Compile Include="Face_reg.py" />
+    <Compile Include="face_train.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gui.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="module1.py" />
     <Compile Include="module2.py" />
   </ItemGroup>
@@ -60,8 +66,6 @@
     <Content Include="Images\Jeppe\WIN_20190930_10_26_41_Pro.jpg" />
     <Content Include="Images\Jeppe\WIN_20190930_10_26_43_Pro.jpg" />
     <Content Include="Images\test.jpg" />
-    <Content Include="NewFile1.txt" />
-    <Content Include="NewFile2.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="cascades\" />
