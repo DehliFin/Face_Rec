@@ -18,15 +18,15 @@ class HelloFrame(wx.Frame):
         pnl = wx.Panel(self)
 
         # put some text with a larger bold font on it
-        st = wx.StaticText(pnl, label="Hello World!")
-        font = st.GetFont()
+        box = wx.StaticBox(pnl,wx.ID_ANY, "statcibox")
+        font = box.GetFont()
         font.PointSize += 10
         font = font.Bold()
-        st.SetFont(font)
+        box.SetFont(font)
 
         # and create a sizer to manage the layout of child widgets
         sizer = wx.BoxSizer(wx.VERTICAL)
-        sizer.Add(st, wx.SizerFlags().Border(wx.TOP|wx.LEFT, 25))
+        sizer.Add(box, wx.SizerFlags().Border(wx.TOP|wx.LEFT, 25))
         pnl.SetSizer(sizer)
 
         # create a menu bar
