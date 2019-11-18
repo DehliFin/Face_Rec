@@ -15,6 +15,7 @@ while(True):
     imagePath = "frame"
 
     
+
     # Read the image
     image = cv2.imread(imagePath)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -37,7 +38,7 @@ while(True):
 
         print(x,y,w,h)
 
-        color = (255, 0, 0)#blue BGR
+        color = (0, 255, 0)#blue BGR
         stroke = 2 #thickness on border
         end_cord_x = x + w
         end_cord_y = y + h
@@ -49,8 +50,6 @@ while(True):
     cv2.imshow('frame',frame)
     
     cv2.waitKey(41) #24 fps
-
-     
 
 cap.release()
 cv2.destroyAllWindows()

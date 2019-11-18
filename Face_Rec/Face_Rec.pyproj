@@ -23,10 +23,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="cascades\data\__init__.py" />
-    <Compile Include="Face_reg.py" />
-    <Compile Include="face_train.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="gui.py">
       <SubType>Code</SubType>
     </Compile>
