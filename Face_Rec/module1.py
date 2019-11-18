@@ -2,8 +2,11 @@ import cv2
 import sys
 #from Face_reg import frame
 cascPath = "cascades\data\haarcascade_frontalface_alt2.xml"
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 faceCascade = cv2.CascadeClassifier(cascPath)
+red = int(input())
+blue = int(input())
+green = int(input())
 
 while(True):    
 
@@ -35,7 +38,9 @@ while(True):
         roi_gray = gray[y:y+h, x:x+w] # roi = reigon of interest
         roi_color = frame[y:y+h, x:x+w]
 
-        color = (255, 0, 0)#blue BGR
+        print(x, y, w, h)
+
+        color = (blue, green, red)#blue BGR
         stroke = 2 #thickness on border
         end_cord_x = x + w
         end_cord_y = y + h
