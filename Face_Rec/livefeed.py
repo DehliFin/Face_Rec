@@ -2,7 +2,7 @@ import cv2
 import sys
 #from Face_reg import frame
 cascPath = "cascades\data\haarcascade_frontalface_alt2.xml"
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 faceCascade = cv2.CascadeClassifier(cascPath)
 
 while(True):    
