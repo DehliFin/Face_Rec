@@ -4,9 +4,6 @@ import sys
 cascPath = "cascades\data\haarcascade_frontalface_alt2.xml"
 cap = cv2.VideoCapture(0)
 faceCascade = cv2.CascadeClassifier(cascPath)
-red = int(input())
-blue = int(input())
-green = int(input())
 
 while(True):    
 
@@ -40,7 +37,7 @@ while(True):
 
         print(x, y, w, h)
 
-        color = (blue, green, red)#blue BGR
+        color = (0, 255, 0)#blue BGR
         stroke = 2 #thickness on border
         end_cord_x = x + w
         end_cord_y = y + h

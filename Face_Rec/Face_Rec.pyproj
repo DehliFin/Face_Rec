@@ -31,10 +31,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="module1.py" />
-    <Compile Include="module2.py" />
     <Compile Include="cam.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="module2.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="cascades\data\haarcascade_eye.xml" />
@@ -68,6 +68,7 @@
     <Content Include="Images\Jeppe\WIN_20190930_10_26_39_Pro.jpg" />
     <Content Include="Images\Jeppe\WIN_20190930_10_26_41_Pro.jpg" />
     <Content Include="Images\Jeppe\WIN_20190930_10_26_43_Pro.jpg" />
+    <Content Include="Images\plakat_img2.jpg" />
     <Content Include="Images\test.jpg" />
   </ItemGroup>
   <ItemGroup>
