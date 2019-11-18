@@ -32,6 +32,9 @@
     </Compile>
     <Compile Include="module1.py" />
     <Compile Include="module2.py" />
+    <Compile Include="cam.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="cascades\data\haarcascade_eye.xml" />

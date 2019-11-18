@@ -1,3 +1,5 @@
+import cv2
+
 #!/usr/bin/env python
 """
 Hello World, but with more meat.
@@ -14,13 +16,15 @@ class HelloFrame(wx.Frame):
         # ensure the parent's __init__ is called
         super(HelloFrame, self).__init__(*args, **kw)
 
+
+
         # create a panel in the frame
         pnl = wx.Panel(self)
 
         # put some text with a larger bold font on it
-        box = wx.StaticBox(pnl,wx.ID_ANY, "statcibox")
+        box = wx.StaticBox(pnl,wx.ID_ANY,"hello")
         font = box.GetFont()
-        font.PointSize += 10
+        font.PointSize += 20
         font = font.Bold()
         box.SetFont(font)
 
