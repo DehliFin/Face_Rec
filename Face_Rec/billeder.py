@@ -1,10 +1,9 @@
 import cv2
 import sys
 
-cascPath = "cascedes\data\haarcascade_frontalface_default.xml"
+cascPath = "cascades\data\haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
-
-image = cv2.imread("Images\plakat_img2.jpg")
+image = cv2.imread(r"Images\abba.png")
 #scale_percent = 20
 #dim = (int(image.shape[1] * scale_percent / 100), int(image.shape[0] * scale_percent / 100))
 #resize = cv2.resize(image, dim)
