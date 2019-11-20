@@ -2,9 +2,10 @@ import cv2
 import sys
 #from Face_reg import frame
 cascPath = "cascades\data\haarcascade_frontalface_alt2.xml"
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 faceCascade = cv2.CascadeClassifier(cascPath)
-
+cap.set(3,1000)
+cap.set(4,500)
 while(True):    
 
     # Capture frame-by-frame
@@ -23,10 +24,10 @@ while(True):
     # Detect faces in the image
     faces = faceCascade.detectMultiScale(
         gray,
-        scaleFactor=1.2,
+        scaleFactor=1.15,
         minNeighbors=5,
         minSize=(30, 30),
-        #flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+        
     )
 
     
@@ -38,13 +39,13 @@ while(True):
 
         print(x, y, w, h)
 
-        color = (0, 255, 0)#blue BGR
+        color = (0, 255, 0)#Green BGR
         stroke = 2 #thickness on border
         end_cord_x = x + w
         end_cord_y = y + h
         cv2.rectangle(frame, (x, y), (end_cord_x, end_cord_y), color, stroke)
      
-    #cv2.imshow("Faces found", frame)    
+   
     # Display the resulting frame
    
     cv2.imshow('frame',frame)
